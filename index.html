@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Smart Grocery Budgeter</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <div class="container">
+
+<div class="project-title">
+  <h3>GROUP 4</h3>
+
+  <p class="team-members">Bahis • Jefferson • Alysa</p>
+
+  <h1>🛒 Smart Grocery Budgeter</h1>
+
+  <p class="slogan">Smart prices for smarter shopping</p>
+</div>
+
+    <div class="budget-box">
+      <label>Enter Your Budget ($)</label>
+      <input type="number" id="budgetInput" placeholder="Example: 100">
+    </div>
+
+    <div class="item-box">
+   
+      <input type="text" id="itemName" placeholder="Item Name">
+      <button onclick="addItem()">Add Item</button>
+    </div>
+
+    <div class="list-section">
+      <h2>Shopping List</h2>
+      <ul id="shoppingList"></ul>
+    </div>
+
+    <div class="summary">
+      <h3>Total: $<span id="total">0</span></h3>
+      <h3>Remaining: $<span id="remaining">0</span></h3>
+    </div>
+
+    <div id="warning"></div>
+    <div id="suggestion"></div>
+
+  </div>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
